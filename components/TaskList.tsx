@@ -1,3 +1,4 @@
+import MarkAllComplete from "./MarkAllComplete";
 import TaskItem from "./TaskItem";
 
 export default function TaskList({ tasks }: any) {
@@ -6,6 +7,7 @@ export default function TaskList({ tasks }: any) {
             {tasks.map((task: any) => (
                 <TaskItem key={task.id} task={task} />
             ))}
+            <MarkAllComplete />
         </div>
     );
 }

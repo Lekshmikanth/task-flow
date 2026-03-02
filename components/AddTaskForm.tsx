@@ -1,6 +1,7 @@
 "use client";
 
 import { addTask } from "@/actions/taskActions";
+import Button from "./Button";
 
 export default function AddTaskForm() {
     return (
@@ -10,9 +11,9 @@ export default function AddTaskForm() {
                 placeholder="Enter task..."
                 className="border p-2 flex-1 rounded"
             />
-            <button className="bg-blue-500 text-white px-4 rounded">
+            <Button>
                 Add
-            </button>
+            </Button>
         </form>
     );
 }
